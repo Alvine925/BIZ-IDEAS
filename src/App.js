@@ -208,9 +208,16 @@ export default function BusinessIdeaFilter() {
     ? ideas.filter((idea) => idea.industry === selectedIndustry)
     : ideas;
 
-  return (
+    return (
+  <>
+    <div className="bg-blue-700 text-white text-center py-12 mb-8 shadow-md">
+      <h1 className="text-4xl font-bold mb-2">Discover Profitable Business Ideas</h1>
+      <p className="text-lg">Filtered by Industry, Designed for Hustlers</p>
+    </div>
+
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">
+      {/* Filter dropdown and idea cards go here */}
+
         Explore Business Ideas by Industry
       </h1>
       <select
