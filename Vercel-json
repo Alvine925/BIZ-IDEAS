@@ -1,7 +1,6 @@
 {
   "buildCommand": "npm install --legacy-peer-deps && npm run build",
-  "outputDirectory": "build"
+  "outputDirectory": "build",
+  "ignoreCommand": "exit 0"
 }
-git add vercel.json
-git commit -m "Fix deploy issue with legacy-peer-deps"
-git push
+npm uninstall typescript
